@@ -1,5 +1,5 @@
 import Image from "next/image";
-import images from "/Users/mark/markdev/images.js"; // Make sure the path to your images.js file is correct
+import images from "/Users/mark/markdev/public/images.js"; // Make sure the path to your images.js file is correct
 import ProjModal from "./projModal";
 
 export default function Projects() {
