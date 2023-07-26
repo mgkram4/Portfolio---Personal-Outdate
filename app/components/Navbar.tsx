@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Player } from "@lottiefiles/react-lottie-player";
-import navAni from "/Users/mark/markdev/public/nav.json";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -21,7 +20,7 @@ function Navbar() {
             <Player
               autoplay
               loop
-              src={navAni}
+              src="/nav.json"
               style={{ width: "100px", height: "100px" }}
             />
           </div>

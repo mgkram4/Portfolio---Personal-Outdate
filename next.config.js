@@ -1,13 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "cdn.sanity.io",
-        port: "",
-      },
-    ],
+    domains: ["cdn.sanity.io"], // Add more domains if needed
+    // Optional: Add your custom loader for specific image sources if required
+    loader: "default",
   },
 };
 

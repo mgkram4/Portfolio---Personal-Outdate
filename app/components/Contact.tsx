@@ -2,10 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import MyForm from "/Users/mark/markdev/app/components/Form.jsx";
+import Form from "./Form";
 
 import { Player } from "@lottiefiles/react-lottie-player";
-import contact from "/Users/mark/markdev/public/contact.json";
 
 export default function Contact() {
   const [playerSize, setPlayerSize] = useState({
@@ -37,14 +36,14 @@ export default function Contact() {
     <div className="bg-contact min-h-screen flex flex-col justify-center items-center p-4 ">
       <div className="flex md:flex-row flex-col items-center justify-center mb-4">
         <div className="flex justify-center items-center bg-slate-100 p-8 rounded-xl py-2">
-          <MyForm />
+          <Form />
         </div>
         {/* Lottie Player */}
         <div className="flex items-center justify-center p-4 my-4 ">
           <Player
             autoplay
             loop
-            src={contact}
+            src="./contact.json"
             style={{ ...playerSize, maxWidth: "100%" }}
           />
         </div>
