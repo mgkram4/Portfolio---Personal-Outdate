@@ -15,15 +15,14 @@ export default async function ProjModal() {
     const data = await getData();
 
     return (
-      <div className="flex justify-center ">
-        {" "}
+      <div className="flex justify-center">
         {/* Center the whole content */}
         <ul className="">
           {/* Center the items and wrap them in flex */}
           {data.map((post: Post) => (
             <li
               key={post._id}
-              className="flex-1 flex-row p-1 m-2 space-x-8 overflow-hidden bg-blue-60 rounded-xl "
+              className="flex-1 flex-col md:flex-row p-1 m-2 space-y-4 md:space-y-0 md:space-x-8 overflow-hidden bg-blue-60 rounded-xl "
             >
               <Link
                 href="#"
