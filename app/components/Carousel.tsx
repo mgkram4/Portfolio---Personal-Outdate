@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="max-w-[980px] w-full m-auto py-8 px-4 relative group">
-      <div className="relative w-full h-96 sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden">
+      <div className="relative w-full h-64 sm:h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden">
         <Image
           src={slides[currentIndex].url}
           alt={`Slide ${currentIndex + 1}`}
