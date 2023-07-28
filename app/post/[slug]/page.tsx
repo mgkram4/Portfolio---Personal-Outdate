@@ -26,7 +26,7 @@ export default async function SlugPage({
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-hero">
+    <div className="flex flex-col justify-center items-center h-screen">
       {" "}
       {/* Add 'h-screen' to make sure the container takes full height */}
       <div className="font-bold">{data.title}</div>

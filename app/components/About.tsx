@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 
 export default function About() {
   return (
-    <div className="bg-aboutMe min-h-screen flex flex-col items-center justify-center mx-auto text-center lg:flex-3">
+    <div className=" min-h-screen flex flex-col items-center justify-center mx-auto text-center lg:flex-3">
       <div className="flex flex-col justify-center items-center w-11/12 md:w-4/5">
         <Carousel />
         <div className="font-semibold text-lg md:text-xl lg:text-2xl m-2">

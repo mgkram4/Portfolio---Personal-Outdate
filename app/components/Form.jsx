@@ -114,7 +114,7 @@ const MyForm = () => {
           type="submit" // Added type="submit" to make it a submit button
           className="flex justify-center items-center mb-4 bg-slate-50 shadow-md font-semibold text-lg p-4  rounded-xl transition-transform duration-300 hover:bg-blue-10 hover:text-slate-50 hover:opacity-95 hover:shadow-2xl"
         >
-          Submit
+          Send
         </button>
       </div>
     </form>

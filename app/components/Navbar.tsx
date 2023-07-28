@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <div className="left-0 w-full flex items-center justify-between bg-blue-60">
+    <div className="left-0 w-full flex items-center justify-between">
       {/* LEFT */}
       <div className="items-center ">
         <Link href="/">

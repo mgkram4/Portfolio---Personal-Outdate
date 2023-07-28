@@ -33,7 +33,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <div className="bg-contact min-h-screen flex flex-col justify-center items-center p-4 ">
+    <div className="min-h-screen mt-20 flex flex-col justify-center items-center p-4 ">
       <div className="flex md:flex-row flex-col items-center justify-center mb-4">
         <div className="flex justify-center items-center bg-slate-100 p-8 rounded-xl py-2">
           <Form />

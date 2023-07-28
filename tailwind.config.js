@@ -13,7 +13,7 @@ module.exports = {
         "blue-90": "rgba(178, 221, 254, 255)",
       },
       backgroundImage: {
-        hero: "url('/hero.jpg')",
+        hero: "url('/hero.png')",
         aboutMe: "url('/aboutMe.jpg')",
         tech: "url('/tech.jpg')",
         contact: "url('/contact.jpg')",

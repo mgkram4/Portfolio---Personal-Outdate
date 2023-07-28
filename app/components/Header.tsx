@@ -1,25 +1,50 @@
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 export default function Header() {
+  const [showText, setShowText] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowText(true);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
   return (
-    <div className="bg-hero h-screen flex flex-col items-center justify-center ">
-      <div className="mb-64">
+    <div className="h-screen flex flex-col items-center justify-center ">
+      <div className="">
         <div className="flex flex-col items-center justify-center">
-          <div className="flex justify-center items-center bg-slate-50 shadow-md font-semibold text-4xl p-6 rounded-xl">
+          <div
+            className={`flex justify-center items-center bg-slate-50 font-semibold text-5xl p-6 rounded-xl ${
+              showText ? "opacity-100" : "opacity-0"
+            } transition-opacity`}
+          >
             Hi, I&apos;m&nbsp;Mark Garcia
           </div>
         </div>
 
-        <div className="flex justify-center items-center bg-slate-50 shadow-md font-semibold text-xl p-4 m-6  rounded-xl">
+        <div
+          className={`flex justify-center items-center underline bg-slate-50 font-semibold text-3xl p-4 m-6  rounded-xl ${
+            showText ? "opacity-100" : "opacity-0"
+          } transition-opacity`}
+        >
           FullStack Web Developer
         </div>
-        <div className="flex justify-center">
-          <button
-            // onClick={handleClick}
-            className="flex justify-center items-center bg-slate-50 shadow-md font-semibold text-lg p-4  rounded-xl transition-transform duration-300 hover:bg-blue-10 hover:text-slate-50 hover:opacity-95 hover:-translate-y-1 hover:shadow-2xl"
-          >
-            About Me
-          </button>
+
+        <div className="flex px-4 items-center ">
+          <Player
+            autoplay
+            loop
+            src="/dev.json"
+            style={{ width: "500px", height: "500px" }}
+          />
         </div>
       </div>
     </div>
