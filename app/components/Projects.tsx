@@ -5,7 +5,7 @@ import ProjModal from "./projModal";
 export default function Projects() {
   return (
     <div className="h-screen mt-20 flex flex-col items-center justify-center">
-      <div className="text-2xl m-2">Technologies</div>
+      <div className="text-2xl m-2 font-bold">Technologies</div>
       <div className="bg-slate-50 rounded-md shadow-md w-4/5">
         <div className="ml-4 mr-5">
           <div className="flex items-center justify-center">
@@ -30,7 +30,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="text-2xl mt-8 m-2">Projects</div>
+      <div className="text-2xl mt-8 m-2 font-bold">Projects</div>
       <div className="bg-slate-50 rounded-md shadow-md w-4/5">
         <div className="ml-4 mr-4">
           <div className="flex items-center justify-center overflow-hidden">

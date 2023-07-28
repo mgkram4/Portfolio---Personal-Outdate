@@ -39,8 +39,12 @@ export default async function ProjModal() {
                 )}
               </div>
               <div className="flex flex-col justify-between p-4 leading-normal">
-                <div className="flex justify-center mt-2">{post.title}</div>
-                <p className="flex justify-center">{post.overview}</p>
+                <div className="flex text-center font-bold justify-center mt-2">
+                  {post.title}
+                </div>
+                <p className="flex text-center justify-center">
+                  {post.overview}
+                </p>
               </div>
             </div>
           </Link>

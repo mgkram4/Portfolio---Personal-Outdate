@@ -29,7 +29,7 @@ export default async function SlugPage({
     <div className="flex flex-col justify-center items-center h-screen">
       {" "}
       {/* Add 'h-screen' to make sure the container takes full height */}
-      <div className="font-bold">{data.title}</div>
+      <div className="font-bold ">{data.title}</div>
       <div className="font-bold">{data.overview}</div>
       <div className="flex flex-col justify-center items-center">
         <Image

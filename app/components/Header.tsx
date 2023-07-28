@@ -18,7 +18,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center ">
+    <div className="h-screen flex flex-col items-center justify-center ml-8 mr-8">
       <div className="">
         <div className="flex flex-col items-center justify-center">
           <div
@@ -43,7 +43,7 @@ export default function Header() {
             autoplay
             loop
             src="/dev.json"
-            style={{ width: "500px", height: "500px" }}
+            style={{ width: "400px", height: "400px" }}
           />
         </div>
       </div>
