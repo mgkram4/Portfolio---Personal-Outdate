@@ -54,7 +54,7 @@ function Navbar() {
               <summary>More</summary>
               <ul className="p-2 bg-base-100">
                 <li>
-                  <a>Link 1</a>
+                  <Link href="/resume">Resume</Link>
                 </li>
                 <li>
                   <a>Link 2</a>
