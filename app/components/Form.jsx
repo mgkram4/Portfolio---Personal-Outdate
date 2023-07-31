@@ -54,7 +54,7 @@ const MyForm = () => {
   return (
     <form onSubmit={sendEmail} ref={form} className="py-4">
       <div className="flex text-4xl p-8 font-bold justify-center items-center text-gray-800">
-        Lets Connect
+        Let&apos;s Connect
       </div>
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-8 group">
