@@ -49,16 +49,16 @@ function App() {
       <div className="carousel-item h-full">
         <img src="/IMG_2168.jpg" />
       </div>
-      <div className="carousel-item h-full">
+      {/* <div className="carousel-item h-full">
         <img src="/IMG_2169.jpg" />
-      </div>
+      </div> */}
       <div className="carousel-item h-full">
         <img src="/IMG_2166.jpg" />
       </div>
 
-      <div className="carousel-item h-full">
+      {/* <div className="carousel-item h-full">
         <img src="/IMG_2170.jpg" />
-      </div>
+      </div> */}
     </div>
   );
 }
