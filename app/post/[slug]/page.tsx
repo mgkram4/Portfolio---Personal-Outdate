@@ -26,17 +26,17 @@ export default async function SlugPage({
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col py-8 items-center h-screen">
       {" "}
       {/* Add 'h-screen' to make sure the container takes full height */}
-      <div className="font-bold ">{data.title}</div>
+      <div className="font-bold">{data.title}</div>
       <div className="font-bold">{data.overview}</div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center text-xl">
         <Image
           src={urlFor(data.image).url()}
           alt="logos"
-          width={100}
-          height={100}
+          width={300}
+          height={300}
           placeholder="blur"
           blurDataURL={urlFor(data.image).width(24).height(24).blur(10).url()}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"

@@ -1,8 +1,34 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+
+const Toast = () => (
+  <div
+    id="toast-simple"
+    className="flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800"
+    role="alert"
+  >
+    <svg
+      className="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 18 20"
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"
+      />
+    </svg>
+    <div className="pl-4 text-sm font-normal">Message sent successfully.</div>
+  </div>
+);
 
 const MyForm = () => {
   const form = useRef();
+  const [isToastVisible, setToastVisibility] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,6 +43,7 @@ const MyForm = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setToastVisibility(true); // Show the toast when the message is sent successfully
         },
         (error) => {
           console.log(error.text);
@@ -117,6 +144,9 @@ const MyForm = () => {
           Send
         </button>
       </div>
+
+      {/* Conditionally render the toast based on the isToastVisible state */}
+      {isToastVisible && <Toast />}
     </form>
   );
 };
