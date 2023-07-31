@@ -33,9 +33,9 @@ export default function Contact() {
   }, []);
 
   return (
-    <div className="min-h-screen mt-20 flex flex-col justify-center items-center p-4 ">
+    <div className="min-h-screen bg-aboutMe flex flex-col justify-center items-center p-4 ">
       <div className="flex md:flex-row flex-col items-center justify-center mb-4">
-        <div className="flex justify-center items-center bg-slate-100 p-8 rounded-xl py-2">
+        <div className="flex justify-center items-center border-grey border-2 bg-white p-8 rounded-xl py-2">
           <Form />
         </div>
         {/* Lottie Player */}

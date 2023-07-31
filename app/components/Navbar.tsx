@@ -1,5 +1,7 @@
 "use client";
 
+// Navbar.js
+
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Player } from "@lottiefiles/react-lottie-player";
@@ -22,48 +24,52 @@ function Navbar() {
     setOpen(false);
   };
 
+  const handleToggleChange = () => {
+    setOpen((prevOpen) => !prevOpen); // Toggle the 'open' state on every click
+  };
+
   return (
-    <div
-      className="navbar bg-base-100"
-      style={{
-        opacity: visible ? 1 : 0,
-        transition: "opacity 1s ease-in-out",
-      }}
-    >
+    <div className="navbar rounded-2xl mt-4 mb-4 bg-gradient-to-r from-[rgba(101,74,121,1)] to-[#866a9f]">
       <div className="flex-1">
-        <div className="items-center ">
+        <div className="items-center">
           <Link href="/">
-            <div className="flex px-4 items-center ">
+            <div className="flex px-4 items-center">
               <Player
                 autoplay
                 loop
                 src="/nav.json"
-                style={{ width: "100px", height: "100px" }}
+                style={{
+                  width: "100px",
+                  height: "100px",
+                  opacity: visible ? 1 : 0,
+                  transition: "opacity 1s ease-in-out",
+                }}
               />
             </div>
           </Link>
         </div>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <Link href="/faq">FAQ</Link>
-          </li>
+        {/* Use the 'checked' prop and 'onChange' event handler */}
+
+        <ul className="menu menu-horizontal  px-1">
           <li>
             <details>
-              <summary>More</summary>
+              <summary className="font-bold text-lg">More</summary>
               <ul className="p-2 bg-base-100">
                 <li>
                   <Link href="/resume">Resume</Link>
                 </li>
                 <li>
-                  <a>Link 2</a>
+                  <Link href="/faq">FAQ</Link>
                 </li>
               </ul>
             </details>
           </li>
         </ul>
       </div>
+
+      {/* AudioPlayer to play music */}
     </div>
   );
 }

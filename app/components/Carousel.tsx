@@ -45,34 +45,19 @@ function App() {
   };
 
   return (
-    <div className="max-w-[980px] w-full m-auto py-8 px-4 relative group">
-      <div className="relative w-full h-64 sm:h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden">
-        <Image
-          src={slides[currentIndex].url}
-          alt={`Slide ${currentIndex + 1}`}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center center"
-        />
+    <div className="h-96 carousel carousel-vertical rounded-box">
+      <div className="carousel-item h-full">
+        <img src="/IMG_2168.jpg" />
       </div>
-      {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-1/2 -translate-x-0 transform -translate-y-1/2 left-4 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
+      <div className="carousel-item h-full">
+        <img src="/IMG_2169.jpg" />
       </div>
-      {/* Right Arrow */}
-      <div className="hidden group-hover:block absolute top-1/2 -translate-x-0 transform -translate-y-1/2 right-4 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <BsChevronCompactRight onClick={nextSlide} size={30} />
+      <div className="carousel-item h-full">
+        <img src="/IMG_2166.jpg" />
       </div>
-      <div className="flex mt-4 justify-center">
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className={`w-2 h-2 mx-1 rounded-full ${
-              slideIndex === currentIndex ? "bg-black" : "bg-gray-300"
-            }`}
-          />
-        ))}
+
+      <div className="carousel-item h-full">
+        <img src="/IMG_2170.jpg" />
       </div>
     </div>
   );

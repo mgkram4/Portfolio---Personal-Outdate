@@ -14,7 +14,7 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('/hero.png')",
-        aboutMe: "url('/aboutMe.jpg')",
+        aboutMe: "url('/aboutMe.png')",
         tech: "url('/tech.jpg')",
         contact: "url('/contact.jpg')",
       },

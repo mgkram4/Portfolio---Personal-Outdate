@@ -18,24 +18,23 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center mx-auto sm:mx-8">
+    <div className=" min-h-screen bg-aboutMe flex flex-col items-center justify-center mx-auto text-center sm:mx-8">
       <div className="max-w-xl">
         <div className="flex flex-col items-center justify-center">
           <div
-            className={`flex justify-center items-center font-semibold text-4xl sm:text-5xl p-4 sm:p-6 rounded-xl ${
+            className={`flex justify-center items-center font-semibold text-4xl sm:text-5xl p-4 sm:p-6 rounded-xl bg-white shadow-xl ${
               showText ? "opacity-100 animate-fadeIn" : "opacity-0"
             } transition-opacity`}
           >
             Hi, I&apos;m&nbsp;Mark Garcia
           </div>
-        </div>
-
-        <div
-          className={`flex justify-center items-center underline  font-semibold text-2xl sm:text-4xl p-2 sm:p-4 m-4 sm:m-6 rounded-xl ${
-            showText ? "opacity-100 animate-fadeIn" : "opacity-0"
-          } transition-opacity`}
-        >
-          FullStack Web Developer
+          <div
+            className={`flex justify-center items-center  font-semibold text-2xl sm:text-4xl p-2 sm:p-4 m-4 sm:m-6 rounded-xl bg-white shadow-xl ${
+              showText ? "opacity-100 animate-fadeIn" : "opacity-0"
+            } transition-opacity`}
+          >
+            FullStack Web Developer
+          </div>
         </div>
 
         <div className="flex justify-center items-center  ">
