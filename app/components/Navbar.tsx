@@ -29,7 +29,7 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar rounded-2xl bg-gradient-to-r from-[rgba(101,74,121,1)] to-[#866a9f]">
+    <div className="navbar mt-2 rounded-2xl bg-gradient-to-r from-[rgba(101,74,121,1)] to-[#866a9f]">
       <div className="flex-1">
         <div className="items-center">
           <Link href="/">
@@ -39,8 +39,8 @@ function Navbar() {
                 loop
                 src="/nav.json"
                 style={{
-                  width: "100px",
-                  height: "100px",
+                  width: "50px",
+                  height: "50px",
                   opacity: visible ? 1 : 0,
                   transition: "opacity 1s ease-in-out",
                 }}
