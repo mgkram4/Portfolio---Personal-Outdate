@@ -1,6 +1,8 @@
+import React from "react";
+
 const MarkGarcia = () => {
   return (
-    <div>
+    <div className="m-10">
       <h1>Mark Garcia</h1>
       <p>React/Next.js Full-Stack Developer</p>
       <p>

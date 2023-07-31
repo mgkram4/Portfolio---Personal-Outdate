@@ -6,7 +6,7 @@ export default function About() {
       <div className="font-bold text-4xl">FAQ</div>
       <div className="flex flex-col py-8 space-y-5">
         <div className="font-bold text-2xl">Do you still make Beats or DJ?</div>
-        <div className="text-xl">No, it's been years.</div>
+        <div className="text-xl">No, it&apos;s been years.</div>
         <div className="font-bold text-2xl">Why did you stop?</div>
         <div className="text-xl">
           It became a chore rather than something I genuinely enjoy.
@@ -30,7 +30,9 @@ export default function About() {
         <div className="font-bold text-2xl">What is your favorite movie?</div>
         <div className="text-xl">Midnight in Paris</div>
         <div className="font-bold text-2xl">What is your favorite song?</div>
-        <div className="text-xl">"Never Needed No Help" by Lil Baby</div>
+        <div className="text-xl">
+          &quot;Never Needed No Help&quot; by Lil Baby
+        </div>
         <div className="font-bold text-2xl">
           Who is your favorite music artist?
         </div>
