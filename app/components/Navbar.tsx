@@ -47,11 +47,11 @@ function Navbar() {
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Link</a>
+            <Link href="/faq">FAQ</Link>
           </li>
           <li>
             <details>
-              <summary>Parent</summary>
+              <summary>More</summary>
               <ul className="p-2 bg-base-100">
                 <li>
                   <a>Link 1</a>
