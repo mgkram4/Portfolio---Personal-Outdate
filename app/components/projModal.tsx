@@ -15,15 +15,15 @@ export default async function ProjModal() {
     const data = (await getData()) as Post[];
 
     return (
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4 justify-center">
         {data.map((post: Post) => (
           <Link key={post._id} href={`/post/${post.slug.current}`}>
-            <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 h-full">
-              {/* Add a wrapper div with a fixed height */}
-              <div className="h-20">
+            <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 h-full ">
+              <div className="">
+                {/* Use appropriate height for the image container */}
                 {post.image?.asset && (
                   <Image
-                    className="rounded-xl  mt-4"
+                    className="rounded-xl mt-4"
                     src={urlFor(post.image).url()}
                     alt="logos"
                     width={100}
