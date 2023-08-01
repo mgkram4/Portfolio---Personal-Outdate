@@ -29,7 +29,7 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar mt-2 rounded-2xl bg-gradient-to-r from-[rgba(101,74,121,1)] to-[#866a9f]">
+    <div className="navbar bg-gradient-to-r from-[rgba(101,74,121,1)] to-[#866a9f]">
       <div className="flex-1">
         <div className="items-center">
           <Link href="/">

@@ -22,12 +22,11 @@ export default function About() {
         <div className="text-xl">
           I built applications that are relevant to my life.
         </div>
-
         <div className="font-bold text-2xl">Can anyone learn to code?</div>
         <div className="text-xl">Yes, anyone can learn to code.</div>
 
         <div className="font-bold text-2xl">Do you like to code?</div>
-        <div className="text-xl">Yes, I love it.</div>
+        <div className="text-xl">Yes, I love it!</div>
 
         {/* Responsive font sizes */}
         <div className="font-bold text-2xl md:text-xl lg:text-2xl">
