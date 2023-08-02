@@ -45,7 +45,7 @@ function App() {
   };
 
   return (
-    <div className="h-96 carousel carousel-vertical rounded-box mt-12">
+    <div className=" flex h-96 carousel carousel-vertical rounded-box mt-12">
       <div className="carousel-item h-full">
         <img src="/IMG_2168.jpg" />
       </div>

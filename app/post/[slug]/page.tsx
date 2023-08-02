@@ -43,7 +43,7 @@ export default async function SlugPage({
             blurDataURL={urlFor(data.image).width(24).height(24).blur(10).url()}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
           />
-          <div className="w-full px-4">
+          <div className="w-full space-y-4 px-4  ">
             {/* Added a wrapper with padding to keep the text within a reasonable width on small screens */}
             <PortableText
               value={data.content}
