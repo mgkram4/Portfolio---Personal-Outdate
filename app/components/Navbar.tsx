@@ -5,6 +5,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -33,7 +34,12 @@ function Navbar() {
       <div className="flex-1">
         <div className="items-center">
           <Link href="/">
-            <div className="flex px-2 bg-[rgba(101,74,121,1)]  rounded-xl   items-center">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ type: "easeIn", duration: 0.6, delay: 3.0 }}
+              className="flex px-2 bg-[rgba(101,74,121,1)]  rounded-xl   items-center"
+            >
               <Player
                 autoplay
                 loop
@@ -43,7 +49,7 @@ function Navbar() {
                   height: "75px",
                 }}
               />
-            </div>
+            </motion.div>
           </Link>
         </div>
       </div>

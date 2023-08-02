@@ -11,7 +11,7 @@ export default function About() {
             About Me
           </div>
 
-          <div className="font-semibold bg-white p-6 text-center text-base md:text-lg  space-y-2 rounded-md shadow-lg hover:scale-105 hover:shadow-md transition-all">
+          <div className="font-semibold bg-white p- text-center text-base md:text-lg  space-y-2 rounded-md shadow-lg hover:scale-105 hover:shadow-md transition-all">
             My name is Mark Garcia, and I recently graduated from the University
             of La Verne. During my time there, I developed a strong passion for
             creating web applications and exploring disruptive technologies.
