@@ -29,20 +29,18 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar bg-gradient-to-r from-[rgba(101,74,121,1)] to-[#866a9f]">
+    <div className="navbar sticky top-0 z-50">
       <div className="flex-1">
         <div className="items-center">
           <Link href="/">
-            <div className="flex px-4 items-center">
+            <div className="flex px-2 bg-[rgba(101,74,121,1)]  rounded-xl   items-center">
               <Player
                 autoplay
                 loop
                 src="/nav.json"
                 style={{
-                  width: "50px",
-                  height: "50px",
-                  opacity: visible ? 1 : 0,
-                  transition: "opacity 1s ease-in-out",
+                  width: "75px",
+                  height: "75px",
                 }}
               />
             </div>
@@ -52,10 +50,10 @@ function Navbar() {
       <div className="flex-none">
         {/* Use the 'checked' prop and 'onChange' event handler */}
 
-        <ul className="menu menu-horizontal  px-1">
+        <ul className="menu menu-horizontal  bg-[rgba(101,74,121,1)]  rounded-xl ">
           <li>
             <details>
-              <summary className="font-bold text-lg">More</summary>
+              <summary className="font-bold text-white text-lg">More</summary>
               <ul className="p-2 bg-base-100">
                 <li>
                   <Link href="/resume">Resume</Link>

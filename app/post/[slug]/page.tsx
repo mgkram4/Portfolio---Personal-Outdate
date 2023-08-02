@@ -20,19 +20,20 @@ export default async function SlugPage({
   const PortableTextComponent = {
     types: {
       image: ({ value }: { value: any }) => (
-        <div className="flex justify-center items-center "></div>
+        <div className="flex justify-center items-center"></div>
       ),
     },
   };
 
   return (
-    <div className="flex flex-col bg-aboutMe py-8 items-center h-screen">
-      {" "}
-      {/* Add 'h-screen' to make sure the container takes full height */}
-      <div className="bg-white w-auto text-xl flex flex-col justify-center items-center py-4">
-        <div className="font-bold text-3xl m-2">{data.title}</div>
-        <div className="font-bold">{data.overview}</div>
-        <div className="flex space-y-5 flex-col justify-center items-center text-xl">
+    <div className="flex flex-col py-8 items-center min-h-screen">
+      {/* Removed the 'h-screen' class and added 'min-h-screen' to ensure the container takes at least full height */}
+      <div className="bg-white w-full max-w-3xl text-xl mx-4 md:mx-auto flex flex-col justify-center items-center py-4">
+        {/* Added 'max-w-3xl' to limit the content width on large screens and mx-4 md:mx-auto for horizontal margins */}
+        <div className="font-bold text-3xl m-4">{data.title}</div>
+        {/* Added margin-top to create spacing between the Y-axis and the bold header */}
+        <div className="font-bold mt-4">{data.overview}</div>
+        <div className="flex flex-col justify-center items-center text-xl mt-4">
           <Image
             src={urlFor(data.image).url()}
             alt="logos"
@@ -42,10 +43,13 @@ export default async function SlugPage({
             blurDataURL={urlFor(data.image).width(24).height(24).blur(10).url()}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
           />
-          <PortableText
-            value={data.content}
-            components={PortableTextComponent}
-          />
+          <div className="w-full px-4">
+            {/* Added a wrapper with padding to keep the text within a reasonable width on small screens */}
+            <PortableText
+              value={data.content}
+              components={PortableTextComponent}
+            />
+          </div>
         </div>
       </div>
     </div>
