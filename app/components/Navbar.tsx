@@ -29,7 +29,7 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar sticky top-0 z-50">
+    <div className="navbar sticky top-0 z-50 dark:bg-white">
       <div className="flex-1">
         <div className="items-center">
           <Link href="/">

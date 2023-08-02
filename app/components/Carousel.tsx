@@ -45,20 +45,22 @@ function App() {
   };
 
   return (
-    <div className=" flex h-96 carousel carousel-vertical rounded-box mt-12">
-      <div className="carousel-item h-full">
-        <img src="/IMG_2168.jpg" />
-      </div>
-      {/* <div className="carousel-item h-full">
+    <div className="flex items-center justify-center">
+      <div className=" flex h-96 carousel carousel-vertical rounded-box mt-12">
+        <div className="carousel-item h-full">
+          <img src="/IMG_2168.jpg" />
+        </div>
+        {/* <div className="carousel-item h-full">
         <img src="/IMG_2169.jpg" />
       </div> */}
-      <div className="carousel-item h-full">
-        <img src="/IMG_2166.jpg" />
-      </div>
+        <div className="carousel-item h-full">
+          <img src="/IMG_2166.jpg" />
+        </div>
 
-      {/* <div className="carousel-item h-full">
+        {/* <div className="carousel-item h-full">
         <img src="/IMG_2170.jpg" />
       </div> */}
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function About() {
 
         <div className="font-bold text-2xl">Why did you stop?</div>
         <div className="text-xl">
-          It became a chore rather than something I genuinely enjoy.
+          I enjoyed the proccess more than the outcome.
         </div>
 
         <div className="font-bold text-2xl">Where did you learn to code?</div>
