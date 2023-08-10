@@ -88,7 +88,7 @@ const MarkGarcia = () => {
             Socal SolarWash
           </a>
           <p>
-            <u>Worked on:</u> [Date Range]
+            <u>Worked on:</u> June 2023 - Augest 2023
           </p>
           <p>
             - Developed, designed, and hosted complete website
@@ -101,7 +101,7 @@ const MarkGarcia = () => {
         <li>
           <a href="https://blog-b3hf.vercel.app/">Bella’s Blog</a>
           <p>
-            <u>Worked on:</u> [Date Range]
+            <u>Worked on:</u> May 2023 - July 2023
           </p>
           <p>
             - Designed, developed, and deployed entire website
@@ -114,7 +114,7 @@ const MarkGarcia = () => {
         <li>
           <a href="whaletech3d.shop">WhaleTech3D</a>
           <p>
-            <u>Worked on:</u> [Date Range]
+            <u>Worked on:</u> December 2022 - May 2023
           </p>
           <p>
             - Planned, created, and hosted website in its entirety
