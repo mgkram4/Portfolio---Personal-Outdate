@@ -10,96 +10,34 @@ const MarkGarcia = () => {
         <strong>React/Next.js Full-Stack Developer</strong>
       </p>
       <p>
-        <strong>
-          626-506-8267 | mark.garcia4@laverne.edu | <u>LinkedIn Profile</u> |{" "}
-          <u>GitHub Profile</u>
-        </strong>
+        <strong>626-506-8267 | mark.garcia4@laverne.edu</strong>
       </p>
 
       <h2>
-        <strong>Summary:</strong>
+        <strong>Summary of Qualifications:</strong>
       </h2>
       <p>
-        Highly skilled React/Next.js Full-Stack Developer with 2+ years of
-        experience in building robust and user-friendly web applications.
-        Proficient in JavaScript, React, Next.js, and modern front-end
-        technologies. Strong problem-solving abilities and a passion for
-        delivering high-quality code. Familiar with Scrum development
-        methodologies.
+        Highly skilled Full-Stack Developer with strong leadership,
+        communication, and project management abilities. Proficient in building
+        dynamic and responsive web applications using React, Next.js, and other
+        modern technologies. Proven experience collaborating with experienced
+        teams to enhance UI/UX systems and deliver high-quality projects.
+        Certified in Systems Engineering and adept at documentation and project
+        lifecycle management.
       </p>
-
-      <h2>
-        <strong>Technical Skills:</strong>
-      </h2>
-      <ul>
-        <li>
-          Front-End Technologies: React, Next.js, Redux, TypeScript, JavaScript
-          (ES6+), HTML5, CSS3, Tailwind CSS, daisyUI, Flowbite
-        </li>
-        <li>Version Control: Git, CLI</li>
-        <li>CMS: Sanity</li>
-        <li>
-          Back-End Technologies: Node.Js, Prisma (PostgresQL), NextAuth, Clerk
-        </li>
-      </ul>
-
-      <h2>
-        <strong>Projects:</strong>
-      </h2>
-      <ol>
-        <li>
-          <a href="whaletech3d.shop">whaletech3d.shop</a>
-          <p>
-            <u>Description:</u> E-commerce application
-          </p>
-          <p>
-            <u>Technologies:</u> React, Node.js, Tailwind CSS, Email.js,
-            Firebase, JS
-          </p>
-        </li>
-        <li>
-          <a href="socalsolar.com">socalsolar.com</a> (
-          <a href="https://socal-solar-2.vercel.app/">Demo</a>)
-          <p>
-            <u>Description:</u> Business contact/information application
-          </p>
-          <p>
-            <u>Technologies:</u> React, Next.js, Tailwind CSS, Vercel, Email.js,
-            TS
-          </p>
-        </li>
-        <li>
-          <a href="markgarcia.dev">markgarcia.dev</a> (
-          <a href="https://port-next-13-1-1-2bg9.vercel.app/">Demo</a>)
-          <p>
-            <u>Description:</u> Personal portfolio
-          </p>
-          <p>
-            <u>Technologies:</u> React, Next.js, Tailwind CSS, sanity.io,
-            Vercel, Lottie, Email.js, TS
-          </p>
-        </li>
-        <li>
-          <a href="bellasblog.com">bellasblog.com</a> (
-          <a href="https://blog-b3hf.vercel.app/">Demo</a>)
-          <p>
-            <u>Description:</u> Blog application
-          </p>
-          <p>
-            <u>Technologies:</u> React, Next.js, Tailwind CSS, Sanity.io,
-            Vercel, TS
-          </p>
-        </li>
-      </ol>
 
       <h2>
         <strong>Education:</strong>
       </h2>
       <p>
-        <u>Bachelor of Science in E-Commerce</u>
+        <u>Bachelor of Science in E-Commerce | 2023</u>
+        <br />
+        University of La Verne, La Verne, CA
       </p>
       <p>
-        <u>University of La Verne | 2023</u>
+        - Departmental Honors in Computer Science and Computer Engineering |
+        2023
+        <br />- Academic Recognition in Information Systems of E-commerce | 2022
       </p>
 
       <h2>
@@ -107,27 +45,86 @@ const MarkGarcia = () => {
       </h2>
       <ul>
         <li>
-          <u>Certification of Achievement:</u> Systems Engineering | University
-          of La Verne | 2023
+          <u>
+            Certification of Achievement: Systems Engineering | University of La
+            Verne | 2023
+          </u>
         </li>
       </ul>
 
       <h2>
-        <strong>Awards and Recognition:</strong>
+        <strong>Skills:</strong>
       </h2>
       <ul>
         <li>
-          <u>Computer Science and Computer Engineering:</u> Departmental Honors
-          | 2023
-        </li>
-        <li>
-          <u>Academic Recognition Info Systems of E-commerce:</u> 2022
+          Proficient in: JavaScript, TypeScript, React, Node.js, Next.js,
+          Tailwind CSS, Git CLI, Node Package Manager, and Restful API's
         </li>
       </ul>
 
-      <p>
-        <strong>References: Available upon request.</strong>
-      </p>
+      <h2>
+        <strong>Work History:</strong>
+      </h2>
+      <ol>
+        <li>
+          <a href="https://port-next-13-1-1-2bg9.vercel.app/">
+            Personal Portfolio
+          </a>
+          <p>
+            <u>Worked on:</u> April 2023 - July 2023
+          </p>
+          <p>
+            - Planned, created, and hosted website from scratch
+            <br />
+            - Ensured full responsiveness on mobile devices
+            <br />
+            - Implemented animated components, dynamic page routing, and data
+            fetching from CMS
+            <br />- Integrated a contact form for user interaction
+          </p>
+        </li>
+        <li>
+          <a href="https://socal-solar-wash-ouzw.vercel.app/">
+            Socal SolarWash
+          </a>
+          <p>
+            <u>Worked on:</u> [Date Range]
+          </p>
+          <p>
+            - Developed, designed, and hosted complete website
+            <br />
+            - Achieved full mobile responsiveness
+            <br />- Created navigation to business information page, animated
+            components, and quote request form
+          </p>
+        </li>
+        <li>
+          <a href="https://blog-b3hf.vercel.app/">Bella’s Blog</a>
+          <p>
+            <u>Worked on:</u> [Date Range]
+          </p>
+          <p>
+            - Designed, developed, and deployed entire website
+            <br />
+            - Ensured optimal display on mobile devices
+            <br />- Implemented light and dark mode, dynamic page routing, and
+            data fetching from CMS
+          </p>
+        </li>
+        <li>
+          <a href="whaletech3d.shop">WhaleTech3D</a>
+          <p>
+            <u>Worked on:</u> [Date Range]
+          </p>
+          <p>
+            - Planned, created, and hosted website in its entirety
+            <br />
+            - Ensured full responsiveness on mobile devices
+            <br />- Developed navigation to business information page, product
+            catalog, and contact form
+          </p>
+        </li>
+      </ol>
     </div>
   );
 };
