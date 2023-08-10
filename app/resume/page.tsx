@@ -58,7 +58,7 @@ const MarkGarcia = () => {
       <ul>
         <li>
           Proficient in: JavaScript, TypeScript, React, Node.js, Next.js,
-          Tailwind CSS, Git CLI, Node Package Manager, and Restful API&apos;s
+          Tailwind CSS, Git CLI, Node Package Manager, and Restful API&rsquo;s
         </li>
       </ul>
 
@@ -88,7 +88,7 @@ const MarkGarcia = () => {
             Socal SolarWash
           </a>
           <p>
-            <u>Worked on:</u> June 2023 - Augest 2023
+            <u>Worked on:</u> June 2023 - August 2023
           </p>
           <p>
             - Developed, designed, and hosted complete website
@@ -99,7 +99,7 @@ const MarkGarcia = () => {
           </p>
         </li>
         <li>
-          <a href="https://blog-b3hf.vercel.app/">Bella’s Blog</a>
+          <a href="https://blog-b3hf.vercel.app/">Bella&rsquo;s Blog</a>
           <p>
             <u>Worked on:</u> May 2023 - July 2023
           </p>
