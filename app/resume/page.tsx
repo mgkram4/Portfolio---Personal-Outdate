@@ -58,7 +58,7 @@ const MarkGarcia = () => {
       <ul>
         <li>
           Proficient in: JavaScript, TypeScript, React, Node.js, Next.js,
-          Tailwind CSS, Git CLI, Node Package Manager, and Restful API's
+          Tailwind CSS, Git CLI, Node Package Manager, and Restful API&apos;s
         </li>
       </ul>
 
