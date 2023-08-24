@@ -2,7 +2,7 @@ import React from "react";
 
 const MarkGarcia = () => {
   return (
-    <div className="m-10 py-8 space-y-2 bg-white text-black">
+    <div className="space-y-2 bg-white text-black">
       <h1>
         <strong>Mark Garcia</strong>
       </h1>
