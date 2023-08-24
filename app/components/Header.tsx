@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   return (
-    <div className="min-h-screen bg-cover bg-aboutMe flex flex-col items-center mx-auto text-center">
+    <div className="min-h-screen text-black bg-cover bg-aboutMe flex flex-col items-center mx-auto text-center">
       <div className="max-w-xl">
         <div className="flex flex-col items-center">
           <motion.div

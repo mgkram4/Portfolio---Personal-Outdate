@@ -4,7 +4,7 @@ import ProjModal from "./projModal";
 
 export default function Projects() {
   return (
-    <div className="min-h-screen bg-aboutMe bg-cover flex flex-col items-center  justify-center">
+    <div className="min-h-screen text-black bg-aboutMe bg-cover flex flex-col items-center  justify-center">
       <div className="font-semibold text-lg md:text-xl lg:text-2xl bg-white rounded-md shadow-xl p-2 m-2">
         Technologies
       </div>
