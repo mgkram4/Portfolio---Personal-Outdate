@@ -19,7 +19,7 @@ export default async function ProjModal() {
         {data.map((post: Post) => (
           <Link key={post._id} href={`/post/${post.slug.current}`}>
             <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100  h-full ">
-              <div className="">
+              <div className="gap-2 rounded-xl shadow-lg ">
                 {/* Use appropriate height for the image container */}
                 {post.image?.asset && (
                   <Image
