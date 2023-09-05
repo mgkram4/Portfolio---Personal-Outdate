@@ -4,27 +4,42 @@ import Image from "next/image";
 import { Player } from "@lottiefiles/react-lottie-player";
 import AnimationHeader from "./AnimationHeader";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Header() {
   return (
-    <div className="min-h-screen text-black bg-cover bg-aboutMe flex flex-col items-center mx-auto text-center">
-      <div className="max-w-xl">
+    <div className="min-h-screen text-slate-900 bg-cover bg-aboutMe flex flex-col items-center mx-auto text-center">
+      <div className="max-w-xl mt-8 ">
         <div className="flex flex-col items-center">
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "easeIn", duration: 1.0, delay: 0.75 }}
-            className="flex m-12 ml-12 font-bold text-4xl justify-center items-center border-grey border-2 bg-white p-8 rounded-xl py-2 sm:text-5xl"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 2.5 }}
+            className=" bg-white bg-opacity-90 p-8 rounded-xl py-2 text-4xl mb-8 font-semibold"
           >
-            Hi, I&apos;m&nbsp;Mark Garcia
+            Mark Garcia
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "easeIn", duration: 0.6, delay: 2.0 }}
-            className="flex mr-12 ml-12 font-bold text-4xl justify-center items-center border-grey border-2 bg-white p-8 rounded-xl py-2 sm:text-3xl"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 3.0 }}
+            className=" font-semibold p-2 text-4xl justify-center items-center  bg-white bg-opacity-90  rounded-xl py-2 sm:text-5xl"
           >
-            FullStack Web Developer
+            <span className="mr-1">I am a </span>
+            <TypeAnimation
+              sequence={[
+                "Web Developer ",
+                4000,
+                "UI/UX Designer",
+                4000,
+                "Systems Engineer",
+                4000,
+              ]}
+              speed={50}
+              className="text-[rgba(101,74,121,1)] inline-flex "
+              wrapper="span"
+              repeat={Infinity}
+            />
           </motion.div>
 
           <AnimationHeader />

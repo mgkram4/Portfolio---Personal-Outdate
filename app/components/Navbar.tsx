@@ -37,7 +37,7 @@ function Navbar() {
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ type: "easeIn", duration: 0.6, delay: 3.0 }}
+              transition={{ type: "easeIn", duration: 0.6, delay: 4.0 }}
               className="flex px-2 bg-[rgba(101,74,121,1)]  rounded-xl   items-center"
             >
               <Player

@@ -7,19 +7,20 @@ import image6 from ".//image6.png";
 import image7 from ".//image7.png";
 import image8 from ".//image8.png";
 import image9 from ".//image9.png";
-import image10 from ".//image10.png";
+
+import image11 from ".//image11.png";
 
 const images = [
   image1,
   image2,
   image3,
   image4,
+  image11,
   image5,
   image6,
   image7,
   image8,
   image9,
-  image10,
 ];
 
 export default images;
