@@ -30,7 +30,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-11/12 md:w-4/5 mx-auto mb-8 ">
             <div className="flex flex-col font-semibold bg-white  border border-gray-200 p-4 mt-2 text-base md:text-2xl lg:text-xl rounded-md shadow-lg hover:scale-105 hover:shadow-md transition-all">
               <div className="max-w-sm  bg-white  rounded-lg ">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                <h5 className="mb-2 items-center text-2xl font-bold tracking-tight text-gray-900">
                   Batchlor of Science in E-Commerce
                 </h5>
 

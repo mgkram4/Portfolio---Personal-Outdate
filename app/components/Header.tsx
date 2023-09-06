@@ -41,6 +41,7 @@ export default function Header() {
               repeat={Infinity}
             />
           </motion.div>
+
           <div className="mt-8">
             <AnimationHeader />
           </div>
