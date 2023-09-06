@@ -17,13 +17,13 @@ export default function Header() {
             transition={{ duration: 0.5, delay: 2.5 }}
             className=" bg-white bg-opacity-90 p-8 rounded-xl py-2 text-4xl mb-8 font-semibold"
           >
-            Mark Garcia
+            <span className=""> Mark Garcia</span>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 3.0 }}
-            className=" font-semibold p-2 text-4xl justify-center items-center  bg-white bg-opacity-90  rounded-xl py-2 sm:text-5xl"
+            className=" font-semibold p-2 text-3xl justify-center items-center  bg-white bg-opacity-90  rounded-xl py-2 sm:text-5xl"
           >
             <span className="mr-1">I am a </span>
             <TypeAnimation
@@ -36,13 +36,14 @@ export default function Header() {
                 4000,
               ]}
               speed={50}
-              className="text-[rgba(101,74,121,1)] inline-flex "
+              className="text-[rgba(101,74,121,1)]  inline-flex "
               wrapper="span"
               repeat={Infinity}
             />
           </motion.div>
-
-          <AnimationHeader />
+          <div className="mt-8">
+            <AnimationHeader />
+          </div>
         </div>
       </div>
     </div>
