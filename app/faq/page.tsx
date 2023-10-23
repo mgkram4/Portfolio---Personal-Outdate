@@ -49,9 +49,7 @@ export default function About() {
         <div className="font-bold text-2xl md:text-xl lg:text-2xl">
           What is your favorite song?
         </div>
-        <div className="text-xl md:text-lg lg:text-xl">
-          &quot;Never Needed No Help&quot; by Lil Baby
-        </div>
+        <div className="text-xl md:text-lg lg:text-xl">Better 0ff</div>
 
         <div className="font-bold text-2xl md:text-xl lg:text-2xl">
           Who is your favorite music artist?
