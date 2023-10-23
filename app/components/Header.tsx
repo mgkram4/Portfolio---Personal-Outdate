@@ -34,6 +34,8 @@ export default function Header() {
                 4000,
                 "Systems Engineer",
                 4000,
+                "Instructor",
+                4000,
               ]}
               speed={50}
               className="text-[rgba(101,74,121,1)]  inline-flex "

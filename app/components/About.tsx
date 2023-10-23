@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="min-h-screen text-black bg-aboutMe bg-cover flex flex-col items-center justify-center mx-auto text-center lg:flex-3">
       <div className="flex flex-col justify-center items-center w-11/12 md:w-4/5">
-        <div className="flex items-center justify-center ml-8">
+        <div className="flex items-center justify-center ">
           <Carousel />
         </div>
         <div className="font-bold  mt-8">
