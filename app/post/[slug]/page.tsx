@@ -4,6 +4,7 @@ import { urlFor } from "@/app/lib/sanityImageUrl";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 
+export const dynamic = "force-dynamic";
 async function getData(slug: string) {
   const query = `*[_type == "post" && slug.current == "${slug}"][0]`;
   const data = await client.fetch(query);
