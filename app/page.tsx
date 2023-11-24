@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+export const dynamic = "force-dynamic";
 export default function Home() {
   return (
     <div>
