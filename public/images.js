@@ -9,6 +9,11 @@ import image8 from ".//image8.png";
 import image9 from ".//image9.png";
 
 import image11 from ".//image11.png";
+import image12 from ".//image12.png";
+import image13 from ".//image13.png";
+import image14 from ".//image14.png";
+import image15 from ".//image15.png";
+import image16 from ".//image16.png";
 
 const images = [
   image1,
@@ -21,6 +26,11 @@ const images = [
   image7,
   image8,
   image9,
+  image12,
+  image13,
+  image14,
+  image15,
+  image16,
 ];
 
 export default images;

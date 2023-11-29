@@ -22,8 +22,8 @@ export default function Projects() {
                   src={image.src}
                   alt="logos"
                   layout="responsive"
-                  width={image.width}
-                  height={image.height}
+                  width={/* set a fixed width here, for example: */ 100}
+                  height={/* set a fixed height here, for example: */ 100}
                   className="mx-auto bg-white hover:scale-125 hover:shadow-2xl transition-all  shadow-md p-2 rounded-xl"
                 />
               </div>
