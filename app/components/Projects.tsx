@@ -1,7 +1,7 @@
 import Image from "next/image";
 import images from "../../public/images.js";
 import ProjModal from "./projModal";
-import AniCar from "./AniCar.tsx";
+import AniCar from "./AniCar";
 
 export default function Projects() {
   return (
