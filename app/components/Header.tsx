@@ -17,7 +17,7 @@ export default function Header() {
             transition={{ duration: 0.5, delay: 2.5 }}
             className=" bg-white bg-opacity-95 p-8 rounded-xl py-2 text-5xl mb-8 font-semibold"
           >
-            <span className=""> Hey, I'm Mark!</span>
+            <span className=""> Hey, I&apos;m Mark!</span>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
