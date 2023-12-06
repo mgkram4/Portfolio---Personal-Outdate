@@ -46,7 +46,7 @@ const ShuffleCards = () => {
   }, []);
 
   return (
-    <div className="grid place-content-center overflow-hidden min-w-full px-8 py-24 text-black mr-8">
+    <div className="grid place-content-center overflow-hidden min-w-full px-8 py-24 text-black ">
       <motion.div
         whileTap={{ scale: 0.985 }}
         className="relative -ml-[100px] h-[450px] w-[350px] md:-ml-[175px]"
