@@ -15,7 +15,7 @@ export default function Header() {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 2.5 }}
-            className=" bg-white bg-opacity-90 p-8 rounded-xl py-2 text-4xl mb-8 font-semibold"
+            className=" bg-white bg-opacity-95 p-8 rounded-xl py-2 text-5xl mb-8 font-semibold"
           >
             <span className=""> Mark Garcia</span>
           </motion.div>
@@ -23,12 +23,12 @@ export default function Header() {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 3.0 }}
-            className=" font-semibold p-2 text-3xl justify-center items-center  bg-white bg-opacity-90  rounded-xl py-2 sm:text-5xl"
+            className=" font-semibold p-2 text-4xl justify-center items-center  bg-white bg-opacity-95  rounded-xl py-2 "
           >
             <span className="mr-1">I am a </span>
             <TypeAnimation
               sequence={[
-                "Web Developer ",
+                "FullStack Developer ",
                 4000,
                 "UI/UX Designer",
                 4000,

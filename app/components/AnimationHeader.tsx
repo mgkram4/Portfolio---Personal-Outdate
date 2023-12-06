@@ -15,7 +15,7 @@ export default function AnimationHeader() {
         autoplay
         loop
         src="/devCoding.json"
-        style={{ width: "100%", height: "100%" }}
+        className="w-full h-full lg:max-w-5xl"
       />
     </motion.div>
   );
