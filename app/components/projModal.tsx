@@ -10,45 +10,48 @@ async function getData() {
   return data;
 }
 
+export const dynamic = "force-dynamic";
+
 export default async function ProjModal() {
   try {
     const data = (await getData()) as Post[];
 
     return (
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4 justify-center">
-        {data.map((post: Post) => (
-          <Link key={post._id} href={`/post/${post.slug.current}`}>
-            <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100  h-full ">
-              <div className="gap-2 rounded-xl shadow-lg ">
-                {/* Use appropriate height for the image container */}
-                {post.image?.asset && (
-                  <Image
-                    className="rounded-xl mt-4"
-                    src={urlFor(post.image).url()}
-                    alt="logos"
-                    width={100}
-                    height={100}
-                    placeholder="blur"
-                    blurDataURL={urlFor(post.image)
-                      .width(24)
-                      .height(24)
-                      .blur(10)
-                      .url()}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
-                  />
-                )}
-              </div>
-              <div className="flex flex-col justify-between p-4 leading-normal">
-                <div className="flex text-center font-bold justify-center mt-2">
-                  {post.title}
+      <div className="carousel carousel-start  max-w-sm md:max-w-7xl p-12 space-x-4 rounded-box over">
+        <div className="carousel-item gap-8 ">
+          {data.map((post: Post) => (
+            <Link key={post._id} href={`/post/${post.slug.current}`}>
+              <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:-translate-y-1.5 transform transition-all h-full">
+                <div
+                  className="mt-64 rounded-t-md shadow-lg bg-white opacity-80 w-full "
+                  style={{
+                    backgroundImage: post.image?.asset
+                      ? `url(${urlFor(post.image).url()})`
+                      : "none",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: 0.9,
+                    height: "350px", // Set the desired height
+                    width: "300px", // Set the desired width
+                    margin: "0 8px", // Adjust the margin to add spacing
+                  }}
+                >
+                  <div className="flex flex-col justify-between p-4 leading-normal w-full">
+                    <div className="mt-64"></div>
+                    <div className="bg-white  p-2 rounded-md opacity-95 ">
+                      <div className="flex text-center font-bold justify-center text-lg md:text-xl lg:text-2xl">
+                        {post.title}
+                      </div>
+                      <p className="flex text-center justify-center text-sm md:text-base lg:text-lg">
+                        {post.overview}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <p className="flex text-center justify-center">
-                  {post.overview}
-                </p>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
     );
   } catch (error) {

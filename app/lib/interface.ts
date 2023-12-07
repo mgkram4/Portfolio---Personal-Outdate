@@ -1,4 +1,6 @@
 export interface Post {
+  description: string;
+  category: string;
   title: string;
   overview: string;
   content: any;

@@ -3,6 +3,7 @@ import images from "../../public/images.js";
 import ProjModal from "./projModal";
 import AniCar from "./AniCar";
 import { Reveal } from "./Reveal";
+import CardCarousel from "./Carousel3";
 
 export default function Projects() {
   return (
