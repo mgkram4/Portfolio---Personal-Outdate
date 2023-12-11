@@ -27,7 +27,7 @@ export default async function SlugPage({
   };
 
   return (
-    <div className="flex flex-col text-black items-center min-h-screen">
+    <div className="flex flex-col text-black items-center min-h-screen bg-aboutMe">
       {/* Removed the 'h-screen' class and added 'min-h-screen' to ensure the container takes at least full height */}
       <div className="bg-white w-full max-w-3xl text-xl mx-4 md:mx-auto flex flex-col justify-center items-center">
         {/* Added 'max-w-3xl' to limit the content width on large screens and mx-4 md:mx-auto for horizontal margins */}
