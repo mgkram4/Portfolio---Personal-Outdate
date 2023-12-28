@@ -58,7 +58,12 @@ const CardCarousel = () => {
               .reverse()
               .map((item) => {
                 return (
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  <a
+                    key={item.id}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Card key={item.id} {...item} />
                   </a>
                 );
