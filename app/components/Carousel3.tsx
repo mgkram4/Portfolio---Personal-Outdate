@@ -155,7 +155,7 @@ const items: ItemType[] = [
   },
   {
     id: 3,
-    url: "/socal.png",
+    url: "/Socal.png",
     category: "Business Information",
     title: "Socal Solar",
     link: "https://washsocalsolar.com/",
