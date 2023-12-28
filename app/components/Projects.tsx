@@ -23,11 +23,12 @@ export default function Projects() {
           Projects
         </div>
       </Reveal>
-      <div className="bg-slate-50 rounded-md shadow-md w-4/5">
+      <div className="bg-slate-50 rounded-md shadow-md">
         <div className="ml-4 mr-4">
-          <div className="flex items-center justify-center overflow-hidden">
+          <div className="flex items-center justify-center ">
             <Reveal>
-              <ProjModal />
+              <CardCarousel />
+              {/* <ProjModal /> */}
             </Reveal>
           </div>
         </div>

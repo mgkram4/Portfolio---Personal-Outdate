@@ -1,8 +1,12 @@
+"use client";
+
 import { Post } from "@/app/lib/interface";
 import { client } from "@/app/lib/sanity";
 import { urlFor } from "@/app/lib/sanityImageUrl";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
+import Link from "next/link";
+import { FaHome } from "react-icons/fa";
 
 export const dynamic = "force-dynamic";
 async function getData(slug: string) {
@@ -54,6 +58,11 @@ export default async function SlugPage({
             />
           </div>
         </div>
+        <Link href="/">
+          <button className="mt-2 text-md rounded-xl bg-gray-300 p-2 hover:opacity-70">
+            <FaHome />
+          </button>
+        </Link>
       </div>
     </div>
   );

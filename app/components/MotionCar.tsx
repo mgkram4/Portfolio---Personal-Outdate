@@ -1,7 +1,4 @@
-"use client";
-
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
@@ -44,25 +41,21 @@ const CardCarousel = () => {
 
   return (
     <section className="bg-slate-100" ref={ref}>
-      <div className="flex  p-4 ">
+      <div className="relative overflow-hidden p-4">
         {/* CARDS */}
-        <div className="mx-auto max-w-sm md:max-w-3xl lg:max-w-6xl">
+        <div className="mx-auto max-w-6xl">
+          <p className="mb-4 text-2xl font-semibold">
+            Everything. <span className="text-slate-500">Yes, even that.</span>
+          </p>
           <motion.div
             animate={{
               x: offset,
             }}
             className="flex"
           >
-            {items
-              .slice()
-              .reverse()
-              .map((item) => {
-                return (
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">
-                    <Card key={item.id} {...item} />
-                  </a>
-                );
-              })}
+            {items.map((item) => {
+              return <Card key={item.id} {...item} />;
+            })}
           </motion.div>
         </div>
 
@@ -94,7 +87,7 @@ const CardCarousel = () => {
   );
 };
 
-const Card = ({ url, category, title, description, link }: ItemType) => {
+const Card = ({ url, category, title, description }: ItemType) => {
   return (
     <div
       className="relative shrink-0 cursor-pointer rounded-2xl bg-white shadow-md transition-all hover:scale-[1.015] hover:shadow-xl"
@@ -107,7 +100,7 @@ const Card = ({ url, category, title, description, link }: ItemType) => {
         backgroundSize: "cover",
       }}
     >
-      <div className="absolute inset-0 z-20 rounded-2xl bg-gradient-to-b from-black/80 via-black/60 to-black/0 p-6 text-white transition-[backdrop-filter] hover:backdrop-blur-sm">
+      <div className="absolute inset-0 z-20 rounded-2xl bg-gradient-to-b from-black/90 via-black/60 to-black/0 p-6 text-white transition-[backdrop-filter] hover:backdrop-blur-sm">
         <span className="text-xs font-semibold uppercase text-violet-300">
           {category}
         </span>
@@ -126,44 +119,63 @@ type ItemType = {
   category: string;
   title: string;
   description: string;
-  link: string;
 };
 
 const items: ItemType[] = [
   {
     id: 1,
-    url: "/Whale.png",
-    category: "E-Commerce",
-    title: "WhaleTech3D",
-    link: "https://www.whaletech3d.shop",
+    url: "/imgs/computer/mouse.png",
+    category: "Mice",
+    title: "Just feels right",
     description:
-      "WhaleTech is an online store specializing in 3D printers and accessories, providing a user-friendly experience with a diverse product catalog. Built with: React JS, Firebase, Email JS, Tailwind",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },
   {
     id: 2,
-    url: "/stoic.png",
-    category: "Blog",
-    title: "StayStoic",
-    link: "https://blog-b3hf.vercel.app/",
+    url: "/imgs/computer/keyboard.png",
+    category: "Keyboards",
+    title: "Type in style",
     description:
-      "StayStoic presents a captivating blog experience, driven by a powerful tech stack that includes: Next JS, Sanity, Tailwind, Google Adsense",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },
   {
     id: 3,
-    url: "/socal.png",
-    category: "Business Information",
-    title: "Socal Solar",
-    link: "https://washsocalsolar.com/",
+    url: "/imgs/computer/monitor.png",
+    category: "Monitors",
+    title: "Looks like a win",
     description:
-      "Socal Solar Wash is a dynamic solar energy advocacy platform, leveraging: Next Js, Tailwind, Email js",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },
   {
     id: 4,
-    url: "/Simply.png",
-    category: "E-Commerce",
-    title: "SimplyPet",
-    link: "https://dog-sanity-next-stripe.vercel.app/",
+    url: "/imgs/computer/chair.png",
+    category: "Chairs",
+    title: "Back feels great",
     description:
-      "SimplyPet E-Commerce Store features: Next JS, Stripe, Sanity ",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+  },
+  {
+    id: 5,
+    url: "/imgs/computer/lights.png",
+    category: "Lights",
+    title: "It's lit",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+  },
+  {
+    id: 6,
+    url: "/imgs/computer/desk.png",
+    category: "Desks",
+    title: "Stand up straight",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+  },
+  {
+    id: 7,
+    url: "/imgs/computer/headphones.png",
+    category: "Headphones",
+    title: "Sounds good",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
   },
 ];
