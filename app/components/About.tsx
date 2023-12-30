@@ -40,7 +40,7 @@ export default function About() {
                 <div className="flex mt-2 flex-col h-32 font-semibold bg-white border border-gray-200 p-4 text-base md:text-2xl lg:text-xl rounded-md shadow-lg  hover:shadow-md transition-all text-center items-center w-96 md:w-full md:h-60">
                   <div className="max-w-sm bg-white rounded-lg">
                     <h5 className="mt-1 items-center text-xl md:text-2xl font-bold tracking-tight text-gray-900">
-                      Batchelor of Science in <span>E-Commerce</span>
+                      Bachelors of Science in <span>E-Commerce</span>
                     </h5>
                     <MdSchool className="inline-flex text-3xl md:text-5xl mt-6" />
                   </div>
