@@ -10,7 +10,6 @@ const MarkGarcia = () => {
       </p>
       <p className="text-lg">
         <strong>Email:</strong> mark.garica@laverne.edu |{" "}
-        <strong>Phone:</strong> (626) 506-8267
       </p>
       <p className="text-lg">
         <Link

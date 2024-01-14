@@ -29,7 +29,7 @@ export default function About() {
           <div className="flex flex-col items-center justify-center mx-auto mt-2 text-center">
             <Reveal>
               <div className="font-semibold text-4xl w-full bg-white rounded-md shadow-xl p-2 m-2">
-                Acomplishments
+                Accomplishments
               </div>
             </Reveal>
           </div>
